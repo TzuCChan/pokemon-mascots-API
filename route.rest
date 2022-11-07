@@ -1,0 +1,27 @@
+GET http://localhost3000/legendaries
+
+###
+
+GET http://localhost3000/legendaries/20
+
+###
+
+POST http://localhost:3000/legendaries
+Content-Type: application/json
+
+{
+  "name": "Lugia",
+  "legendaryType": "Psychic Flying"
+}
+
+###
+
+DELETE http://localhost:3000/legendaries/
+
+###
+PATCH DELETE http://localhost:3000/legendaries/
+Content-Type: application/json
+
+{
+  "name": "New Pokemon"
+}
